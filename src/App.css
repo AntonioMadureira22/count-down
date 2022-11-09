@@ -47,9 +47,444 @@
 }
 h1{
   color: #D95D39;
-  font-size: 50px;
+  font-size: 60px;
+  margin-top: 30%;
   margin-bottom: 20%;
   text-shadow: 2px 2px 9px #F18805;
   font-family: 'Orbitron', sans-serif;
 }
+.fx{
+  animation: pulsate 3s ease-out;
+  animation-iteration-count: infinite;
+  opacity: .5;
+}
+h2{
+  margin-top: 3%;
+  color: #D95D39;
+  font-size: 30px;
+  text-shadow: 2px 2px 9px #F18805;
+  font-family: 'Orbitron', sans-serif;
+}
+.pulsate{
+  animation: pulsate 3s ease-out;
+  animation-iteration-count: infinite;
+  opacity: .5;
+}
+.controller{
+  margin-top: 8%;
+  width: 500px;
+  display: block;
+  border: 0px 0px 5px 20px;
+}
+audio{
+  background-color: white;
+  border-radius: 10px;
+  border: 3px silver;
+  
+}
+audio:hover{
+  box-shadow: 0px 0px 5px 25px;
+  color: #F18805;
+}
 
+@keyframes pulsate{
+  0%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 1.0;
+  }
+  100%{
+    opacity: 0.5;
+  }
+}
+
+/*Media screen format*/
+
+@media screen and (max-width:850px) and (orientation: landscape) {
+  .App {
+    text-align: center;
+    height: 100vh;
+    background-color: #0E1428;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clock{
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg,#D95D39, #F18805);
+    height: 180px;
+    width: 500px;
+    color: #F0A202;
+    text-shadow: 1px 1px 7px;
+    border-radius: 15px;
+    border: 2px solid silver;
+    box-shadow: 0 0 5px 20px;
+  }
+  
+  .clock section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .clock  section p{
+    font-size: 4rem;
+    
+  }
+  .clock  section small{
+    color: silver;
+    text-shadow: none;
+    font-family: 'Orbitron', sans-serif;
+  }
+  h1{
+    color: #D95D39;
+    font-size: 20px;
+    margin-top: 30%;
+    margin-bottom: 20%;
+    text-shadow: 2px 2px 9px #F18805;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .fx{
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+    opacity: .5;
+  }
+  h2{
+    margin-top: 3%;
+    color: #D95D39;
+    font-size: 30px;
+    text-shadow: 2px 2px 9px #F18805;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .pulsate{
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+    opacity: .5;
+  }
+  .controller{
+    margin-top: 8%;
+    width: 500px;
+    display: block;
+    border: 0px 0px 5px 20px;
+  }
+  audio{
+    background-color: white;
+    border-radius: 10px;
+    border: 3px silver;
+    
+  }
+  audio:hover{
+    box-shadow: 0px 0px 5px 25px;
+    color: #F18805;
+  }
+  
+  @keyframes pulsate{
+    0%{
+      opacity: 0.5;
+    }
+    50%{
+      opacity: 1.0;
+    }
+    100%{
+      opacity: 0.5;
+    }
+  }
+}
+@media screen and (max-width:1000px) {
+  .App {
+    text-align: center;
+    height: 100vh;
+    background-color: #0E1428;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clock{
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg,#D95D39, #F18805);
+    height: 180px;
+    width: 500px;
+    color: #F0A202;
+    text-shadow: 1px 1px 7px;
+    border-radius: 15px;
+    border: 2px solid silver;
+    box-shadow: 0 0 5px 20px;
+  }
+  
+  .clock section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .clock  section p{
+    font-size: 4rem;
+    
+  }
+  .clock  section small{
+    color: silver;
+    text-shadow: none;
+    font-family: 'Orbitron', sans-serif;
+  }
+  h1{
+    color: #D95D39;
+    font-size: 60px;
+    margin-top: 30%;
+    margin-bottom: 20%;
+    text-shadow: 2px 2px 9px #F18805;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .fx{
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+    opacity: .5;
+  }
+  h2{
+    margin-top: 3%;
+    color: #D95D39;
+    font-size: 30px;
+    text-shadow: 2px 2px 9px #F18805;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .pulsate{
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+    opacity: .5;
+  }
+  .controller{
+    margin-top: 8%;
+    width: 500px;
+    display: block;
+    border: 0px 0px 5px 20px;
+  }
+  audio{
+    background-color: white;
+    border-radius: 10px;
+    border: 3px silver;
+    
+  }
+  audio:hover{
+    box-shadow: 0px 0px 5px 25px;
+    color: #F18805;
+  }
+  
+  @keyframes pulsate{
+    0%{
+      opacity: 0.5;
+    }
+    50%{
+      opacity: 1.0;
+    }
+    100%{
+      opacity: 0.5;
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  *{
+    overflow: hidden;
+  }
+  .App {
+    text-align: center;
+    height: 100vh;
+    background-color: #0E1428;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clock{
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg,#D95D39, #F18805);
+    height: 180px;
+    width: 400px;
+    color: #F0A202;
+    text-shadow: 1px 1px 7px;
+    border-radius: 15px;
+    border: 2px solid silver;
+    box-shadow: 0 0 5px 20px;
+  }
+  
+  .clock section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .clock  section p{
+    font-size: 4rem;
+    
+  }
+  .clock  section small{
+    color: silver;
+    text-shadow: none;
+    font-family: 'Orbitron', sans-serif;
+  }
+  h1{
+    color: #D95D39;
+    font-size: 40px;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    text-shadow: 2px 2px 9px #F18805;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .fx{
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+    opacity: .5;
+  }
+  h2{
+    margin-top: 15%;
+    color: #D95D39;
+    font-size: 30px;
+    text-shadow: 2px 2px 9px #F18805;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .pulsate{
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+    opacity: .5;
+  }
+  .controller{
+    margin-top: 20%;
+    width: 300px;
+    display: block;
+    border: 0px 0px 3px 15px;
+  }
+  audio{
+    background-color: white;
+    border-radius: 10px;
+    border: 3px silver;
+    
+  }
+  audio:hover{
+    box-shadow: 0px 0px 5px 15px;
+    color: #F18805;
+  }
+  
+  @keyframes pulsate{
+    0%{
+      opacity: 0.5;
+    }
+    50%{
+      opacity: 1.0;
+    }
+    100%{
+      opacity: 0.5;
+    }
+  }
+}
+@media screen and (max-width:575px){
+  .App {
+    text-align: center;
+    height: 100vh;
+    background-color: #0E1428;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clock{
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg,#D95D39, #F18805);
+    height: 180px;
+    width: 300px;
+    color: #F0A202;
+    text-shadow: 1px 1px 7px;
+    border-radius: 10px;
+    border: 2px solid silver;
+    box-shadow: 0 0 10px 50px;
+  }
+  
+  .clock section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .clock  section p{
+    font-size: 4rem;
+    
+  }
+  .clock  section small{
+    color: silver;
+    text-shadow: none;
+    font-family: 'Orbitron', sans-serif;
+  }
+  h1{
+    color: #D95D39;
+    font-size: 30px;
+    margin-top: 30%;
+    margin-bottom: 20%;
+    text-shadow: 2px 2px 9px #F18805;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .fx{
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+    opacity: .5;
+  }
+  h2{
+    margin-top: 3%;
+    color: #D95D39;
+    font-size: 20px;
+    text-shadow: 2px 2px 9px #F18805;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .pulsate{
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+    opacity: .5;
+  }
+  .controller{
+    margin-top: 8%;
+    width: 200px;
+    display: block;
+    border: 0px 0px 5px 20px;
+  }
+  audio{
+    background-color: white;
+    border-radius: 10px;
+    border: 3px silver;
+    
+  }
+  audio:hover{
+    box-shadow: 0px 0px 5px 10px;
+    color: #F18805;
+  }
+  
+  @keyframes pulsate{
+    0%{
+      opacity: 0.5;
+    }
+    50%{
+      opacity: 1.0;
+    }
+    100%{
+      opacity: 0.5;
+    }
+  }
+}

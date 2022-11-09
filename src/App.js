@@ -1,7 +1,11 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+
 //page import
 import Clock from "./components/Clock";
+
+import song from './components/assets/Countdown Beat.mp3'
+
 
 function App() {
   const [timerDays, setTimerDays] = useState();
@@ -12,7 +16,7 @@ function App() {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("November 30,2022").getTime();
+    const countDownDate = new Date("January 2,2023").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -40,21 +44,25 @@ function App() {
       }
     });
   }
-
-  useEffect(() => {
+ useEffect(() => {
     startTimer();
   });
+  
 
   return (
     <div className="App">
       <div className='title'>
-        <h1>Phase 1 Alpha Drop</h1>
+        <h1 className='fx'> T'ill Phase 1</h1>
       </div>
       <Clock timerDays={timerDays} timerHours={timerHours} timerMinutes={timerMinutes} timerSeconds={timerSeconds} />
-
+      <audio className='controller' controls loop
+      src={song} type='audio/mp3'
+      />
+      <h2 className='pulsate'>Click Play ^</h2>
     </div>
     
   );
 }
+
 
 export default App;
